@@ -8,14 +8,14 @@ let genrateRandomInteger = (min, max) => {
 // console.log(genrateRandomInteger(15, 100));
 
 function fizzBuzz(num) {
-  if (num % 3 === 0) {
-    console.log("Fizz");
-  } else if (num % 5 === 0) {
-    console.log("Buzz");
-  } else if (num % 5 === 0 && num % 3 === 0) {
+  if (num % 3 == 0 && num % 5 == 0) {
     console.log("FizzBuzz");
-  } else {
-    console.log(num);
+  }
+  if (num % 3 == 0) {
+    console.log("Fizz");
+  }
+  if (num % 5 == 0) {
+    console.log("Buzz");
   }
 }
-console.log(fizzBuzz(2));
+// fizzBuzz()
